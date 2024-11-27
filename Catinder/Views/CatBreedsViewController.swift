@@ -3,11 +3,11 @@ import Combine
 
 class CatBreedsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    private let tableView = UITableView()
-    private let catAPIService = CatAPIService()
-    private var breeds: [Breed] = []
-    private var breedImages: [String: UIImage] = [:]
-    private var cancellables = Set<AnyCancellable>()
+    let tableView = UITableView()
+    var catAPIService = CatAPIService()
+    var breeds: [Breed] = []
+    var breedImages: [String: UIImage] = [:]
+    var cancellables = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()

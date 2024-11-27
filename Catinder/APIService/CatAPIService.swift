@@ -7,7 +7,7 @@ private enum APIEndpoint {
     
     // Here we use force unwrap to implement a fail-fast approach.
     static let baseURL = URL(string:"https://api.thecatapi.com/v1")!
-    static let apiKey = ""
+    static let apiKey = "live_cXuGAlVFOE5PQ3wn1EVeuK3WaSNv9GIVrllAolXvFUR0WuMD04ADO9LSWfAmOwlP"
 }
 
 /// The protocol for the Cat API service.
@@ -32,8 +32,8 @@ protocol CatAPIServiceType {
 }
 
 /// Default implementation of the Cat API service.
-final class CatAPIService {
-    private var cancellable = Set<AnyCancellable>()
+class CatAPIService {
+    var cancellable = Set<AnyCancellable>()
     
     func fetchImage(at url: URL) -> AnyPublisher<UIImage?, Error> {
         URLSession.shared.dataTaskPublisher(for: url)

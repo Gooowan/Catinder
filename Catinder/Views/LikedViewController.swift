@@ -2,8 +2,8 @@ import UIKit
 
 class LikedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    private let tableView = UITableView()
-    private var likedImages: [UIImage] = []
+    let tableView = UITableView()
+    var likedImages: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -5,9 +5,9 @@ import Combine
 class CatFinderViewController: UIViewController {
     
     var likedImages: LikedViewController?
-    let spinnerView = SpinnerView()
-    private let catAPIService = CatAPIService()
-    private var cancellables = Set<AnyCancellable>()
+    var spinnerView = SpinnerView()
+    var catAPIService = CatAPIService()
+    var cancellables = Set<AnyCancellable>()
     
     let catImageView: UIImageView = {
         let catImageView = UIImageView()
@@ -102,14 +102,14 @@ class CatFinderViewController: UIViewController {
         catImageView.isUserInteractionEnabled = true
     }
     
-    @objc private func handleSwipeLeft() {
+    @objc func handleSwipeLeft() {
         
         print("Cat liked!")
         if let image = catImageView.image { likedImages?.addLikedImage(image) }
         animateSwipe(direction: .left)
     }
         
-    @objc private func handleSwipeRight() {
+    @objc func handleSwipeRight() {
         print("Cat disliked!")
         animateSwipe(direction: .right)
     }
@@ -132,7 +132,7 @@ class CatFinderViewController: UIViewController {
     
     
     // mainly same as in tests
-    private func loadNewCatImage() {
+    func loadNewCatImage() {
         spinnerView.isHidden = false
         catImageView.isHidden = true
 

@@ -11,6 +11,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7BC398842CF75BA00058C261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A450544C2CD2DED300113D97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A45054532CD2DED300113D97;
+			remoteInfo = Catinder;
+		};
 		A450546B2CD2DED500113D97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A450544C2CD2DED300113D97 /* Project object */;
@@ -21,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BC3987E2CF75BA00058C261 /* Task1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Task1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45054542CD2DED300113D97 /* Catinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A450546A2CD2DED500113D97 /* CatinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +44,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7BC3987F2CF75BA00058C261 /* CatinderUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CatinderUITests;
+			sourceTree = "<group>";
+		};
 		A45054562CD2DED300113D97 /* Catinder */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -52,6 +65,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7BC3987B2CF75BA00058C261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A45054512CD2DED300113D97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +95,7 @@
 			children = (
 				A45054562CD2DED300113D97 /* Catinder */,
 				A450546D2CD2DED500113D97 /* CatinderTests */,
+				7BC3987F2CF75BA00058C261 /* CatinderUITests */,
 				A45054552CD2DED300113D97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +105,7 @@
 			children = (
 				A45054542CD2DED300113D97 /* Catinder.app */,
 				A450546A2CD2DED500113D97 /* CatinderTests.xctest */,
+				7BC3987E2CF75BA00058C261 /* Task1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7BC3987D2CF75BA00058C261 /* Task1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC398882CF75BA00058C261 /* Build configuration list for PBXNativeTarget "Task1Tests" */;
+			buildPhases = (
+				7BC3987A2CF75BA00058C261 /* Sources */,
+				7BC3987B2CF75BA00058C261 /* Frameworks */,
+				7BC3987C2CF75BA00058C261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC398852CF75BA00058C261 /* PBXTargetDependency */,
+			);
+			name = Task1Tests;
+			packageProductDependencies = (
+			);
+			productName = Task1Tests;
+			productReference = 7BC3987E2CF75BA00058C261 /* Task1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A45054532CD2DED300113D97 /* Catinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A450547D2CD2DED500113D97 /* Build configuration list for PBXNativeTarget "Catinder" */;
@@ -102,6 +144,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7B09A2DC2CF777C10041B995 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A45054562CD2DED300113D97 /* Catinder */,
@@ -125,9 +168,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				7B09A2DE2CF777C50041B995 /* PBXTargetDependency */,
 				A450546C2CD2DED500113D97 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				7BC3987F2CF75BA00058C261 /* CatinderUITests */,
 				A450546D2CD2DED500113D97 /* CatinderTests */,
 			);
 			name = CatinderTests;
@@ -144,9 +189,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					7BC3987D2CF75BA00058C261 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A45054532CD2DED300113D97;
+					};
 					A45054532CD2DED300113D97 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -167,6 +216,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7B076E8C2CE4D9F20064671E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7B09A2DA2CF777880041B995 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A45054552CD2DED300113D97 /* Products */;
@@ -175,11 +225,19 @@
 			targets = (
 				A45054532CD2DED300113D97 /* Catinder */,
 				A45054692CD2DED500113D97 /* CatinderTests */,
+				7BC3987D2CF75BA00058C261 /* Task1Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7BC3987C2CF75BA00058C261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A45054522CD2DED300113D97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +255,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7BC3987A2CF75BA00058C261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A45054502CD2DED300113D97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +279,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B09A2DC2CF777C10041B995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7B09A2DB2CF777C10041B995 /* SwiftLintBuildToolPlugin */;
+		};
+		7B09A2DE2CF777C50041B995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7B09A2DD2CF777C50041B995 /* SwiftLintBuildToolPlugin */;
+		};
+		7BC398852CF75BA00058C261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A45054532CD2DED300113D97 /* Catinder */;
+			targetProxy = 7BC398842CF75BA00058C261 /* PBXContainerItemProxy */;
+		};
 		A450546C2CD2DED500113D97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A45054532CD2DED300113D97 /* Catinder */;
@@ -222,6 +300,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7BC398862CF75BA00058C261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Solomatin.Task1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Catinder;
+			};
+			name = Debug;
+		};
+		7BC398872CF75BA00058C261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Solomatin.Task1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Catinder;
+			};
+			name = Release;
+		};
 		A450547E2CD2DED500113D97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,7 +373,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5LA28RMG6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Catinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -403,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -422,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -440,6 +556,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7BC398882CF75BA00058C261 /* Build configuration list for PBXNativeTarget "Task1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC398862CF75BA00058C261 /* Debug */,
+				7BC398872CF75BA00058C261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A450544F2CD2DED300113D97 /* Build configuration list for PBXProject "Catinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -478,6 +603,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		7B09A2DA2CF777880041B995 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -485,6 +618,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7B076E8C2CE4D9F20064671E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		7B09A2DB2CF777C10041B995 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B09A2DA2CF777880041B995 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		7B09A2DD2CF777C50041B995 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B09A2DA2CF777880041B995 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
